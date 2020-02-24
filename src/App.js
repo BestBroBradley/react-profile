@@ -8,7 +8,14 @@ import { Footer } from './components/Footer'
 
 function App() {
   return (
+  <>
    <Navbar />
+   <Contact />
+   <About />
+   <Portfolio />
+   <Card />
+   <Footer />
+  </>
   );
 }
 
