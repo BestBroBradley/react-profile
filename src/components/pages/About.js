@@ -21,7 +21,7 @@ export const About = () => {
             </div>
             <div id="profile-text">
                 <h1>Allison Bradley</h1>
-                <h3>Full-stack web developer.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.</h3>
+                <h3 id="bio">Full-stack web developer.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.</h3>
             </div>
         </AboutWrapper>
     )

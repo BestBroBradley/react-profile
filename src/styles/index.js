@@ -128,4 +128,19 @@ export const AboutWrapper = styled.div`
         z-index: 40;
 
     }
+
+    #bio {
+
+    }
+`
+
+export const FooterWrapper = styled.div`
+
+    width: 80%;
+    background: black;
+    margin: auto;
+
+    #footer {
+
+    }
 `
