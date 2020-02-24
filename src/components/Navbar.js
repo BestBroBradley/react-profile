@@ -1,10 +1,19 @@
 import React from "react"
 import { HeaderWrapper } from "../styles"
+import { Link, useLocation } from "react-router-dom"
 
 export const Navbar = () => {
+
+    const location = useLocation()
+
     return (
     <HeaderWrapper>
-        <h1>navbar</h1>
+        <div className="container">
+            <Link to="/">Home</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/about">About</Link>
+        </div>
     </HeaderWrapper>
     )
 }
