@@ -8,6 +8,9 @@ import { Link, useLocation } from "react-router-dom"
 export const About = () => {
     return (
         <AboutWrapper>
+            <div id="header-mobile">
+                <h1>Allison Bradley</h1>
+            </div>
             <div id="profile-image">
                 <div id="profile-span">
                     <div className="link">

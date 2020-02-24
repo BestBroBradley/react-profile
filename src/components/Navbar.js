@@ -6,11 +6,15 @@ import { Link, useLocation } from "react-router-dom"
 export const Navbar = () => {
 
 	const location = useLocation()
+	console.log(location)
 
 	return (
 		<HeaderWrapper>
 			<div className="container">
-				<div id="navbar">
+				<div className="page-title">
+					<h1>Contact</h1>
+				</div>
+				{/* <div id="navbar">
 					<div id="home-link">
 						<Link to="/"><img src={Cat} /></Link>
 					</div>
@@ -25,7 +29,7 @@ export const Navbar = () => {
 							<Link to="/portfolio"><Button>Portfolio</Button></Link>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</HeaderWrapper>
 	)

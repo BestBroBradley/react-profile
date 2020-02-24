@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import "./fonts.css"
+import "../components/images/cat.cur"
 
 const main = "#689C28"
 const click = "#C7CCD0"
@@ -93,8 +94,9 @@ export const AboutWrapper = styled.div`
         display: flex;
         width: 33%;
         margin: auto;
-        @media only screen and (max-width: 400px) {
-            width: 80%
+        @media only screen and (max-width: 560px) {
+            margin-right: 15px;
+            width: 60%
         }
     }
 
@@ -107,6 +109,10 @@ export const AboutWrapper = styled.div`
         background: ${banner};
         align-self: center;
         z-index: 30;
+        @media only screen and (max-width: 560px) {
+            width: 90%;
+            left: 5%
+        }
     }
 
     #contact-btn {
@@ -118,7 +124,12 @@ export const AboutWrapper = styled.div`
     #port-btn {
         align-self: center;
         position: absolute;
-        right: 20px
+        right: 20px;
+        @media only screen and (max-width: 560px) {
+            left: 20px;
+            right: auto;
+            top: 50px;
+        }
     }
 
     img {
@@ -129,6 +140,14 @@ export const AboutWrapper = styled.div`
 
     }
 
+    #header-mobile {
+        display: none;
+        @media only screen and (max-width: 400px) {
+            display: block;
+        }
+
+    }
+
     #bio {
 
     }
@@ -136,11 +155,20 @@ export const AboutWrapper = styled.div`
 
 export const FooterWrapper = styled.div`
 
-    width: 80%;
-    background: black;
-    margin: auto;
-
     #footer {
-
+        width: 80%;
+        margin: auto;
+        text-align: center;
     }
+    
+    a {
+
+        margin: 15px;
+        cursor: url("cat.cur"), default;
+
+        :visited {
+            color: black
+        }
+    }
+
 `
