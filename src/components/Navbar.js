@@ -9,18 +9,22 @@ export const Navbar = () => {
 
 	return (
 		<HeaderWrapper>
-			<div id="navbar" className="container">
-				<div id="home-link">
-					<Link to="/"><img src={Cat}/></Link>
-				</div>
-				<div className="link">
-					<Link to="/contact"><Button>Contact</Button></Link>
-				</div>
-				<div className="link">
-					<Link to="/about"><Button>About</Button></Link>
-				</div>
-				<div className="link">
-					<Link to="/portfolio"><Button>Portfolio</Button></Link>
+			<div className="container">
+				<div id="navbar">
+					<div id="home-link">
+						<Link to="/"><img src={Cat} /></Link>
+					</div>
+					<div className="link-container">
+						<div className="link">
+							<Link to="/contact"><Button>Contact</Button></Link>
+						</div>
+						<div className="link">
+							<Link to="/about"><Button>About</Button></Link>
+						</div>
+						<div className="link">
+							<Link to="/portfolio"><Button>Portfolio</Button></Link>
+						</div>
+					</div>
 				</div>
 			</div>
 		</HeaderWrapper>

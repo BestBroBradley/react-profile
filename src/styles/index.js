@@ -1,28 +1,60 @@
 import styled from "styled-components"
+import "./fonts.css"
+
+const main = "#689C28"
+const click = "#C7CCD0"
+const banner = "#8DAD52"
+const font = "Meera Inimai"
+
 
 export const MainPage = styled.div`
     
 `
 
 export const Button = styled.button`
-    margin: 10px;
+    :hover {
+        color: ${click}
+    };
+
+    :active {
+        background: black
+    };
+
+    font-family: ${font}, sans-serif;
+    margin: 15px 10px;
     font-size: 1.5rem;
     background: none;
-    border: none
-`
-
+    border: none;
+    @media only screen and (max-width: 450px) {
+        font-size: 1rem;
+        margin: 5px;
+        padding: 1.1rem
+    }
+    
+    `
 export const HeaderWrapper = styled.div`
+    .container {
+        border: 3px double black;
+        width: 100%;
+        opacity: .8
+    }
+
     #navbar {
         display: flex;
-        height: 90px;
-        background: yellowgreen;
-        width: 100%;
-        justify-content: flex-end
+        height: auto;
+        background: ${main};
+        width: auto;
+        justify-content: flex-end;
+        border: 3px solid black;
+        margin: 10px;
+        @media only screen and (max-width: 400px) {
+            justify-content: center
+        }
     }
 
     #home-link {
         position: absolute;
-        margin: 0 20px;
+        margin: 0 30px;
         left: 0;
         align-self: center;
         font-weight: bold
@@ -30,10 +62,70 @@ export const HeaderWrapper = styled.div`
 
     img {
         height: 76px;
+        @media only screen and (max-width: 400px) {
+            display: none
+        }
+    }
+
+    .link-container {
+
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .link {
         align-self: center;
     }
 
+    #name {
+        text-align: center
+    }
+
+`
+
+export const AboutWrapper = styled.div`
+
+    display: block;
+    font-family: ${font};
+    text-align: center;
+
+    #profile-image {
+        display: flex;
+        width: 33%;
+        margin: auto;
+        @media only screen and (max-width: 400px) {
+            width: 80%
+        }
+    }
+
+    #profile-span {
+        border: 3px solid black;
+        left: 10%;
+        width: 80%;
+        height: auto;
+        position: absolute;
+        background: ${banner};
+        align-self: center;
+        z-index: 30;
+    }
+
+    #contact-btn {
+        align-self: center;
+        position: absolute;
+        left: 20px
+    }
+
+    #port-btn {
+        align-self: center;
+        position: absolute;
+        right: 20px
+    }
+
+    img {
+        border: 5px grey solid;
+        border-radius: 59%;
+        width: 100%;
+        z-index: 40;
+
+    }
 `
