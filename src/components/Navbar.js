@@ -1,35 +1,25 @@
 import React from "react"
-import Cat from "./images/cat.svg"
 import { HeaderWrapper, Button } from "../styles"
 import { Link, useLocation } from "react-router-dom"
+import Contact from "./images/contact.png"
 
 export const Navbar = () => {
 
-	const location = useLocation()
-	console.log(location)
-
 	return (
 		<HeaderWrapper>
-			<div className="container">
-				<div className="page-title">
-					<h1>Contact</h1>
+			<div id="profile-image">
+				<div>
 				</div>
-				{/* <div id="navbar">
-					<div id="home-link">
-						<Link to="/"><img src={Cat} /></Link>
+				<h1 className="link" id="location">Contact</h1>
+				<div id="profile-span">
+					<div className="link">
+						<Link to="/" id="contact-btn"><Button>About</Button></Link>
 					</div>
-					<div className="link-container">
-						<div className="link">
-							<Link to="/contact"><Button>Contact</Button></Link>
-						</div>
-						<div className="link">
-							<Link to="/about"><Button>About</Button></Link>
-						</div>
-						<div className="link">
-							<Link to="/portfolio"><Button>Portfolio</Button></Link>
-						</div>
+					<div className="link">
+						<Link to="/portfolio" id="port-btn"><Button>Portfolio</Button></Link>
 					</div>
-				</div> */}
+				</div>
+				<img src={Contact} />
 			</div>
 		</HeaderWrapper>
 	)

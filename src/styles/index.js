@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import "./fonts.css"
-import "../components/images/cat.cur"
 
 const main = "#689C28"
 const click = "#C7CCD0"
@@ -34,53 +33,91 @@ export const Button = styled.button`
     
     `
 export const HeaderWrapper = styled.div`
-    .container {
-        border: 3px double black;
-        width: 100%;
-        opacity: .8
-    }
+    
+display: block;
+    font-family: ${font};
+    text-align: center;
 
-    #navbar {
+    #profile-image {
         display: flex;
-        height: auto;
-        background: ${main};
-        width: auto;
-        justify-content: flex-end;
-        border: 3px solid black;
-        margin: 10px;
-        @media only screen and (max-width: 400px) {
-            justify-content: center
+        width: 15%;
+        margin: auto;
+        @media only screen and (max-width: 560px) {
+            margin-right: 15px;
+            width: 60%
         }
     }
 
-    #home-link {
+    #location {
         position: absolute;
-        margin: 0 30px;
+        left: 3%;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 400px) {
+            font-size: 2rem;
+            margin-top: 50px;
+            left: 15px;
+        }
+    }
+
+    #profile-span {
+        border: 3px solid black;
         left: 0;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        background: ${banner};
         align-self: center;
-        font-weight: bold
+        z-index: 30;
+        @media only screen and (max-width: 560px) {
+            width: 80%;
+            left: 5%
+
+        }
+    }
+
+    #hr {
+        width: 100%;
+        height: 20px;
+        border-bottom: 6px solid black
+
+    }
+
+    #contact-btn {
+        align-self: center;
+        position: absolute;
+        right: 140px;
+        margin-top: 20px;
+        @media only screen and (max-width: 560px) {
+        left: 10px;
+        margin: 0;
+        right: auto;
+        top: 15px
+        padding-left: 0
+        }
+}
+
+    #port-btn {
+        align-self: center;
+        position: absolute;
+        right: 20px;
+        margin-top: 20px;
+        @media only screen and (max-width: 560px) {
+            left: 10px;
+            right: auto;
+            top: 50px;
+            margin: 0;
+            padding-left: 0
+        }
     }
 
     img {
-        height: 76px;
-        @media only screen and (max-width: 400px) {
-            display: none
-        }
+        border: 5px grey solid;
+        border-radius: 59%;
+        width: 100%;
+        z-index: 40;
+
     }
 
-    .link-container {
-
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .link {
-        align-self: center;
-    }
-
-    #name {
-        text-align: center
-    }
 
 `
 
@@ -165,10 +202,16 @@ export const FooterWrapper = styled.div`
 
         margin: 15px;
         cursor: url("cat.cur"), default;
+        :hover {
+            color: yellowgreen
+        }
 
         :visited {
             color: black
         }
     }
 
+    #footer {
+
+    }
 `
