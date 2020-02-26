@@ -1,6 +1,6 @@
 import React from "react"
 import { HeaderWrapper, Button } from "../styles"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Contact from "./images/contact.png"
 import Portfolio from "./images/portfolio.png"
 
@@ -20,7 +20,7 @@ export const Navbar = (props) => {
 	<Link to={props.secondaryLink} id="second-btn"><Button>{props.secondaryBtn}</Button></Link>
 					</div>
 				</div>
-				<img src={(props.title === "Contact") ? Contact : Portfolio} />
+				<img alt={props.alt} src={(props.title === "Contact") ? Contact : Portfolio} />
 			</div>
 		</HeaderWrapper>
 	)

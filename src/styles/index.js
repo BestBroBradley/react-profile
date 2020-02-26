@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import "./fonts.css"
 
-const main = "#689C28"
 const click = "#C7CCD0"
 const banner = "#8DAD52"
 const font = "Meera Inimai"
@@ -17,7 +16,7 @@ export const Button = styled.button`
     };
 
     :active {
-        background: black
+        opacity: 0
     };
 
     font-family: ${font}, sans-serif;
@@ -155,7 +154,7 @@ export const AboutWrapper = styled.div`
         align-self: center;
         z-index: 30;
         @media only screen and (max-width: 560px) {
-            width: 90%;
+            width: 75%;
             left: 5%
         }
     }
@@ -190,7 +189,12 @@ export const AboutWrapper = styled.div`
         @media only screen and (max-width: 400px) {
             display: block;
         }
+    }
 
+    #header-desktop {
+        @media only screen and (max-width: 400px) {
+            display: none;
+        }
     }
 
     #bio {
@@ -238,22 +242,59 @@ export const ContactWrapper = styled.div`
 
     input, textarea {
         width: 100%;
+        border: 2px dashed ${click};
+        font-size: 1rem
+    }
 
+    input {
+        height: 30px;
+    }
+
+    .form-field {
+        margin-top: 10px;
+    }
+
+    #submit-btn {
+        padding: 0
     }
 `
 
 export const PortfolioWrapper = styled.div`
-    .card-container {
-        width: 80%;
-        border: 3px solid black;
-        margin: 30px auto;
+        width: 100%;
+        margin: auto;
         font-family: ${font};
         display: flex;
-    }
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .container {
+            @media only screen and (max-width: 400px) {
+                border-top: 5px solid black
+                margin-top: 30px;
+    
+            }
+        }
+    
+    
+        h1 {
+            margin-bottom: 0
+        }
+    
+        p {
+            margin-top: 0
+        }
 `
 
-export const CardWrapper = styled.article`
-    
+export const CardWrapper = styled.div`
+    flex-basis: 300px;
+    border: 3px solid black;
+    margin: 15px 10px;
+    padding: 0 15px;
+
+    h1{
+        border-bottom: 1px solid grey
+    }
 `
 
 export const FooterWrapper = styled.div`

@@ -7,10 +7,11 @@ export const Contact = () => {
         <>
             <Navbar
                 title="Contact"
-                primaryLink="/"
-                primaryBtn="About"
-                secondaryLink="/portfolio"
-                secondaryBtn="Portfolio"
+                secondaryLink="/"
+                secondaryBtn="Home"
+                primaryLink="/portfolio"
+                primaryBtn="Portfolio"
+                alt="telephone"
             />
             <ContactWrapper>
                 <div className="container">
@@ -19,20 +20,20 @@ export const Contact = () => {
                             <p>Feel free to reach out with any inquiries.</p>
                         <div id="email-form">
                             <form>
-                            <div>
-                                <label for="name">Name:</label>
+                            <div className="form-field">
+                                <label htmlFor="name">Name:</label>
                                 <input type="text" name="name" />
                             </div>
-                            <div>
-                                <label for="phone">Phone (optional):</label>
+                            <div className="form-field">
+                                <label htmlFor="phone">Phone (optional):</label>
                                 <input type="text" name="phone" />
                             </div>
-                            <div>
-                                <label for="email">Email:</label>
+                            <div className="form-field">
+                                <label htmlFor="email">Email:</label>
                                 <input type="text" name="email" />
                             </div>
-                            <div>
-                                <label for="message">Message:</label>
+                            <div className="form-field">
+                                <label htmlFor="message">Message:</label>
                                 <textarea rows="7" type="message" name="email" />
                             </div>
                             <Button id="submit-btn" type="submit">Submit</Button>

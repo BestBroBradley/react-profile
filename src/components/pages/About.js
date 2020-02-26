@@ -2,7 +2,7 @@ import React from "react"
 import Me from "../images/me.png"
 import { AboutWrapper } from "../../styles"
 import { Button } from "../../styles"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 export const About = () => {
@@ -20,10 +20,10 @@ export const About = () => {
                         <Link to="/portfolio" id="port-btn"><Button>Portfolio</Button></Link>
                     </div>
                 </div>
-                <img src={Me} />
+                <img alt="The author" src={Me} />
             </div>
             <div id="profile-text">
-                <h1>Allison Bradley</h1>
+                <h1 id="header-desktop">Allison Bradley</h1>
                 <h3 id="bio">Full-stack web developer.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.</h3>
             </div>
         </AboutWrapper>

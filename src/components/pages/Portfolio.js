@@ -9,26 +9,24 @@ export const Portfolio = () => {
         <>
             <Navbar
                 title="Portfolio"
-                primaryLink="/"
-                primaryBtn="About"
-                secondaryLink="/contact"
-                secondaryBtn="Contact"
+                secondaryLink="/"
+                secondaryBtn="Home"
+                primaryLink="/contact"
+                primaryBtn="Contact"
+                alt="computer and eyeglasses"
             />
             <PortfolioWrapper>
-                <div className="card-container">
-                    {portfolio.map((project) => 
-                    <Card
-                        key={project.id}
-                        name={project.name}
-                        image={project.image}
-                        description={project.description}
-                    />
+                <div className="container">
+                    <h1>My Work</h1>
+                    <p>Click on the boxes below to be redirected.</p>
+                    {portfolio.map((project) =>
+                        <Card
+                            key={project.id}
+                            name={project.name}
+                            image={project.image}
+                            description={project.description}
+                        />
                     )}
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
                 </div>
             </PortfolioWrapper>
         </>
