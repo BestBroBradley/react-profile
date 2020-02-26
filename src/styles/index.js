@@ -46,13 +46,16 @@ display: block;
             margin-right: 15px;
             width: 60%
         }
+        @media only screen and (max-width: 400px) {
+            width: 50%
+        }
     }
 
     #location {
         position: absolute;
         left: 3%;
         font-size: 2.5rem;
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 420px) {
             font-size: 2rem;
             margin-top: 50px;
             left: 15px;
@@ -65,10 +68,15 @@ display: block;
         width: 100%;
         height: 0;
         position: absolute;
-        background: ${banner};
         align-self: center;
         z-index: 30;
         @media only screen and (max-width: 560px) {
+            width: 80%;
+            left: 5%
+
+        }
+        @media only screen and (max-width: 400px) {
+            border: none;
             width: 80%;
             left: 5%
 
@@ -186,6 +194,50 @@ export const AboutWrapper = styled.div`
     }
 
     #bio {
+
+    }
+`
+
+export const ContactWrapper = styled.div`
+
+    font-family: ${font};
+
+    .container {
+        margin-top: 30px;
+        @media only screen and (max-width: 400px) {
+            border-top: 5px solid black
+
+        }
+    }
+
+
+    h1 {
+        margin-bottom: 0
+    }
+
+    p {
+        margin-top: 0
+    }
+
+    #contact-details {
+        text-align: center;
+    }
+
+    #email-form {
+        text-align: left;
+        width: 40%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        border: 3px solid black;
+        margin-bottom: 30px;
+        @media only screen and (max-width: 560px) {
+            width: 80%;
+        }
+    }
+
+    input, textarea {
+        width: 100%;
 
     }
 `
