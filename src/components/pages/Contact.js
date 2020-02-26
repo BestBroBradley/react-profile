@@ -19,7 +19,7 @@ export const Contact = () => {
                         <h1>Contact Me</h1>
                             <p>Feel free to reach out with any inquiries.</p>
                         <div id="email-form">
-                            <form>
+                            <form action="https://formspree.io/xeqkggzj" method="POST">
                             <div className="form-field">
                                 <label htmlFor="name">Name:</label>
                                 <input type="text" name="name" />

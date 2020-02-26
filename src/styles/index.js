@@ -301,7 +301,7 @@ export const FooterWrapper = styled.div`
 
     #footer {
         width: 80%;
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
     }
     
