@@ -1,9 +1,14 @@
 import React from "react"
+import { CardWrapper } from "../../styles"
 
-export const Card = () => {
+export const Card = (props) => {
     return (
-    <div>
-        <h1>card</h1>
-    </div>
+        <CardWrapper>
+            <div className="card">
+                <h1>{props.name}</h1>
+                <h2>{props.image}</h2>
+                <h3>{props.description}</h3>
+            </div>
+        </CardWrapper>
     )
 }

@@ -242,6 +242,20 @@ export const ContactWrapper = styled.div`
     }
 `
 
+export const PortfolioWrapper = styled.div`
+    .card-container {
+        width: 80%;
+        border: 3px solid black;
+        margin: 30px auto;
+        font-family: ${font};
+        display: flex;
+    }
+`
+
+export const CardWrapper = styled.article`
+    
+`
+
 export const FooterWrapper = styled.div`
 
     #footer {

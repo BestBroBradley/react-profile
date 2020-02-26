@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Tabletop Tap",
+        "image": "#",
+        "description": "Business website for the Tabletop Tap taproom in Englewood, CO."
+    },
+    {
+        "id": 2,
+        "name": "Budget Buddy",
+        "image": "#",
+        "description": "An app for researching and tracking prices of local restaurants."
+    },
+    {
+        "id": 3,
+        "name": "Weather App",
+        "image": "#",
+        "description": "Allows user to search a 3rd-party weather API for data and also retreive their previous search results."
+    },
+    {
+        "id": 4,
+        "name": "Budget Buddy",
+        "image": "#",
+        "description": "An app for researching and tracking prices of local restaurants."
+    },
+    {
+        "id": 2,
+        "name": "Budget Buddy",
+        "image": "#",
+        "description": "An app for researching and tracking prices of local restaurants."
+    },
+    {
+        "id": 2,
+        "name": "Budget Buddy",
+        "image": "#",
+        "description": "An app for researching and tracking prices of local restaurants."
+    }
+]
