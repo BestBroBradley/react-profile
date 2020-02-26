@@ -260,22 +260,24 @@ export const ContactWrapper = styled.div`
 `
 
 export const PortfolioWrapper = styled.div`
+font-family: ${font};
+text-align: center;
+        
+        .container {
         width: 100%;
         margin: auto;
-        font-family: ${font};
         display: flex;
         justify-content: space-around;
+        border: 3px solid black;
         flex-wrap: wrap;
+        flex-direction: row;
         text-align: center;
-
-        .container {
-            @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 400px) {
                 border-top: 5px solid black
                 margin-top: 30px;
     
             }
         }
-    
     
         h1 {
             margin-bottom: 0
@@ -287,9 +289,9 @@ export const PortfolioWrapper = styled.div`
 `
 
 export const CardWrapper = styled.div`
-    flex: 1;
+    flex-basis: 300px;
     border: 3px solid black;
-    margin: 15px 10px;
+    margin: 15px auto;
     padding: 0 15px;
 
     a {
@@ -312,7 +314,7 @@ export const CardWrapper = styled.div`
 export const ImgWrapper = styled.div`
 
     .port-img {
-        width: 90%;
+        width: 95%;
         border: 1px solid grey
     }
 `

@@ -16,9 +16,9 @@ export const Portfolio = () => {
                 alt="computer and eyeglasses"
             />
             <PortfolioWrapper>
-                <div className="container">
                     <h1>My Work</h1>
                     <p>Click on the photos below to be redirected.</p>
+                <div className="container">
                     {portfolio.map((project) =>
                         <Card
                             key={project.id}
