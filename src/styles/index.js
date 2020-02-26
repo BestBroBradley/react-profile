@@ -82,7 +82,7 @@ display: block;
 
     }
 
-    #contact-btn {
+    #first-btn {
         align-self: center;
         position: absolute;
         right: 140px;
@@ -96,7 +96,7 @@ display: block;
         }
 }
 
-    #port-btn {
+    #second-btn {
         align-self: center;
         position: absolute;
         right: 20px;

@@ -4,7 +4,13 @@ import { Navbar } from '../Navbar'
 export const Contact = () => {
     return (
     <>
-    <Navbar />
+    <Navbar 
+    title="Contact"
+    primaryLink="/"
+    primaryBtn="About"
+    secondaryLink="/portfolio"
+    secondaryBtn="Portfolio"
+    />
     <div>
         <h1>contact</h1>
     </div>
