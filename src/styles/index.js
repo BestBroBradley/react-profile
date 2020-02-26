@@ -287,7 +287,7 @@ export const PortfolioWrapper = styled.div`
 `
 
 export const CardWrapper = styled.div`
-    flex-basis: 300px;
+    flex: 1;
     border: 3px solid black;
     margin: 15px 10px;
     padding: 0 15px;
@@ -304,7 +304,16 @@ export const CardWrapper = styled.div`
     }
 
     h1{
-        border-bottom: 1px solid grey
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+    }
+`
+
+export const ImgWrapper = styled.div`
+
+    .port-img {
+        width: 90%;
+        border: 1px solid grey
     }
 `
 
