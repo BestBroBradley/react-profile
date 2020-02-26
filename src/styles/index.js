@@ -292,6 +292,17 @@ export const CardWrapper = styled.div`
     margin: 15px 10px;
     padding: 0 15px;
 
+    a {
+        :hover {
+            color: ${click}
+        }
+
+        :active {
+            opacity: 0
+        }
+
+    }
+
     h1{
         border-bottom: 1px solid grey
     }

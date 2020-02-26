@@ -2,43 +2,55 @@
     {
         "id": 1,
         "name": "Tabletop Tap",
-        "image": "#",
+        "img": "tabletop-tap",
+        "alt": "tabletop taproom",
         "description": "Business website for the Tabletop Tap taproom in Englewood, CO.",
-        "href": "#"
+        "href": "https://sheltered-falls-54052.herokuapp.com/",
+        "repo": "https://github.com/BestBroBradley/project-two"
     },
     {
         "id": 2,
         "name": "Budget Buddy",
-        "image": "#",
+        "img": "budget-buddy",
+        "alt": "submit an initial budget",
         "description": "An app for researching and tracking prices of local restaurants.",
-        "href": "#"
+        "href": "https://kyleawkjell.github.io/Project-1/index.html",
+        "repo": "https://github.com/kyleawkjell/Project-1"
     },
     {
         "id": 3,
         "name": "Weather App",
-        "image": "#",
+        "img": "weather-app",
+        "alt": "weather app",
         "description": "Allows user to search a 3rd-party weather API for data and also retreive their previous search results.",
-        "href": "#"
+        "href": "https://bestbrobradley.github.io/unit-six-homework/",
+        "repo": "https://github.com/BestBroBradley/unit-six-homework"
     },
     {
         "id": 4,
-        "name": "Budget Buddy",
-        "image": "#",
-        "description": "An app for researching and tracking prices of local restaurants.",
-        "href": "#"
+        "name": "Employee Manager",
+        "img": "employee-manager",
+        "alt": "command line example",
+        "description": "A command-line app which allows a user to interact with their employee database.",
+        "href": "https://github.com/BestBroBradley/unit-twelve-homework",
+        "repo": "https://github.com/BestBroBradley/unit-twelve-homework"
     },
     {
         "id": 5,
-        "name": "Budget Buddy",
-        "image": "#",
-        "description": "An app for researching and tracking prices of local restaurants.",
-        "href": "#"
+        "name": "Hamburger Helper",
+        "img": "hamburger-helper",
+        "alt": "eaten and uneaten burgers",
+        "description": "A CRUD app that allows a user to add and delete items from a Sequelize database.",
+        "href": "https://protected-reef-60040.herokuapp.com/",
+        "repo": "https://github.com/BestBroBradley/unit-14-homework"
     },
     {
         "id": 6,
-        "name": "Budget Buddy",
-        "image": "#",
+        "name": "Rock, Paper, Scissors - GO!",
+        "img": "rps-go",
+        "alt": "user has lost",
         "description": "An app for researching and tracking prices of local restaurants.",
-        "href": "#"
+        "href": "https://bestbrobradley.github.io/rock-paper-scissors-go/",
+        "repo": "https://github.com/BestBroBradley/rock-paper-scissors-go"
     }
 ]

@@ -23,7 +23,10 @@ export const Portfolio = () => {
                         <Card
                             key={project.id}
                             name={project.name}
-                            image={project.image}
+                            img={project.img}
+                            alt={project.alt}
+                            href={project.href}
+                            repo={project.repo}
                             description={project.description}
                         />
                     )}
