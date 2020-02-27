@@ -207,7 +207,6 @@ export const ContactWrapper = styled.div`
         }
     }
 
-
     h1 {
         margin-bottom: 0
     }
@@ -255,7 +254,14 @@ export const ContactWrapper = styled.div`
 export const PortfolioWrapper = styled.div`
 font-family: ${font};
 text-align: center;
-        
+       
+    #outer-div {
+        @media only screen and (max-width: 400px) {
+            border-top: 5px solid black;
+            margin-top: 30px;    
+        }
+    }
+
         .container {
         width: 100%;
         margin: auto;
@@ -264,11 +270,7 @@ text-align: center;
         flex-wrap: wrap;
         flex-direction: row;
         text-align: center;
-        @media only screen and (max-width: 400px) {
-                border-top: 5px solid black
-                margin-top: 30px;
-    
-            }
+
         }
     
         h1 {

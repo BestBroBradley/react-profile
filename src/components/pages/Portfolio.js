@@ -15,7 +15,8 @@ export const Portfolio = () => {
                 primaryBtn="Contact"
                 alt="computer and eyeglasses"
             />
-            <PortfolioWrapper className="container">
+            <PortfolioWrapper>
+                <div id="outer-div"></div>
                     <h1>My Work</h1>
                     <p>Click on the photos below to be redirected.</p>
                 <div className="container">
