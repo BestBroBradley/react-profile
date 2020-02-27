@@ -9,7 +9,7 @@ export const Portfolio = () => {
         <>
             <Navbar
                 title="Portfolio"
-                secondaryLink="/react-profile"
+                secondaryLink="/"
                 secondaryBtn="Home"
                 primaryLink="/contact"
                 primaryBtn="Contact"

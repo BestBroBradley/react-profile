@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "0.1.0",
   "author": "Allison Bradley",
-  "homepage": "http://BestBroBradley.github.io/react-profile",
+  "homepage": "http://BestBroBradley.github.io/react-profile/",
   "private": true,
   "engines": {
     "npm": "6.12.0",
