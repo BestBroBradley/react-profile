@@ -7,7 +7,7 @@ export const Contact = () => {
         <>
             <Navbar
                 title="Contact"
-                secondaryLink="/"
+                secondaryLink="/react-profile"
                 secondaryBtn="Home"
                 primaryLink="/portfolio"
                 primaryBtn="Portfolio"

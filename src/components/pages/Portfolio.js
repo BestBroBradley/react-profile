@@ -9,13 +9,13 @@ export const Portfolio = () => {
         <>
             <Navbar
                 title="Portfolio"
-                secondaryLink="/"
+                secondaryLink="/react-profile"
                 secondaryBtn="Home"
                 primaryLink="/contact"
                 primaryBtn="Contact"
                 alt="computer and eyeglasses"
             />
-            <PortfolioWrapper>
+            <PortfolioWrapper className="container">
                     <h1>My Work</h1>
                     <p>Click on the photos below to be redirected.</p>
                 <div className="container">
