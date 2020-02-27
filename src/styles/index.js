@@ -2,13 +2,7 @@ import styled from "styled-components"
 import "./fonts.css"
 
 const click = "#C7CCD0"
-const banner = "#8DAD52"
 const font = "Meera Inimai"
-
-
-export const MainPage = styled.div`
-    
-`
 
 export const Button = styled.button`
     :hover {
@@ -150,7 +144,6 @@ export const AboutWrapper = styled.div`
         width: 80%;
         height: auto;
         position: absolute;
-        background: ${banner};
         align-self: center;
         z-index: 30;
         @media only screen and (max-width: 560px) {
@@ -268,7 +261,6 @@ text-align: center;
         margin: auto;
         display: flex;
         justify-content: space-around;
-        border: 3px solid black;
         flex-wrap: wrap;
         flex-direction: row;
         text-align: center;
@@ -290,11 +282,42 @@ text-align: center;
 
 export const CardWrapper = styled.div`
     flex-basis: 300px;
-    border: 3px solid black;
-    margin: 15px auto;
-    padding: 0 15px;
+    border: 3px grey solid;
+    margin: 30px 15px;
+    padding: 0 30px;
+    position: relative;
+    @media only screen and (max-width: 400px) {
+        flex-basis: 200px;
+
+    }
+
+    .fa-paw {
+        position: absolute;
+        color: ${click}
+    }
+
+    #top-paw {
+        left: 7px;
+        top: 10px;
+    }
+
+    #bottom-paw {
+        right: 7px;
+        bottom: 10px;
+    }
+
+    h3 {
+        @media only screen and (max-width: 400px) {
+            font-size: 1rem
+        }
+    }
+
+    #repo-div {
+        padding: 15px 0;
+    }
 
     a {
+
         :hover {
             color: ${click}
         }
@@ -313,9 +336,12 @@ export const CardWrapper = styled.div`
 
 export const ImgWrapper = styled.div`
 
-    .port-img {
+    .port-img {    
         width: 95%;
-        border: 1px solid grey
+        border: 3px solid grey;
+        :hover {
+            opacity: 0.5
+        }
     }
 `
 
