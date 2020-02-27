@@ -1,6 +1,7 @@
 {
   "name": "profile",
   "version": "0.1.0",
+  "author": "Allison Bradley",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.12.1",

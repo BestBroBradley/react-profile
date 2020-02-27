@@ -283,6 +283,7 @@ text-align: center;
 export const CardWrapper = styled.div`
     flex-basis: 300px;
     border: 3px grey solid;
+    border-radius: 12%;
     margin: 30px 15px;
     padding: 0 30px;
     position: relative;
@@ -297,13 +298,13 @@ export const CardWrapper = styled.div`
     }
 
     #top-paw {
-        left: 7px;
-        top: 10px;
+        left: 15px;
+        top: 15px;
     }
 
     #bottom-paw {
-        right: 7px;
-        bottom: 10px;
+        right: 15px;
+        bottom: 15px;
     }
 
     h3 {
