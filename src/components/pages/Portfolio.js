@@ -16,21 +16,22 @@ export const Portfolio = () => {
                 alt="computer and eyeglasses"
             />
             <PortfolioWrapper>
-                <div id="outer-div"></div>
+                <div id="outer-div">
                     <h1>My Work</h1>
                     <p>Click on the photos below to be redirected.</p>
-                <div className="container">
-                    {portfolio.map((project) =>
-                        <Card
-                            key={project.id}
-                            name={project.name}
-                            img={project.img}
-                            alt={project.alt}
-                            href={project.href}
-                            repo={project.repo}
-                            description={project.description}
-                        />
-                    )}
+                    <div className="container">
+                        {portfolio.map((project) =>
+                            <Card
+                                key={project.id}
+                                name={project.name}
+                                img={project.img}
+                                alt={project.alt}
+                                href={project.href}
+                                repo={project.repo}
+                                description={project.description}
+                            />
+                        )}
+                    </div>
                 </div>
             </PortfolioWrapper>
         </>
