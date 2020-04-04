@@ -23,8 +23,8 @@
         "img": "weather-app",
         "alt": "weather app",
         "description": "Allows user to search a 3rd-party weather API for data and also retreive their previous search results.",
-        "href": "https://bestbrobradley.github.io/unit-six-homework/",
-        "repo": "https://github.com/BestBroBradley/unit-six-homework"
+        "href": "https://bestbrobradley.github.io/weather-buddy/",
+        "repo": "https://github.com/BestBroBradley/weather-buddy"
     },
     {
         "id": 4,
