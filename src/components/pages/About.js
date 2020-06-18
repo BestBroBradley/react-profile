@@ -24,7 +24,7 @@ export const About = () => {
             </div>
             <div id="profile-text">
                 <h1 id="header-desktop">Allison Bradley</h1>
-                <h3 id="bio">Full-stack web developer with a history in language and education, specializing in the MERN Stack.  Looking to join a cooperative, motivated, and driven team.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.</h3>
+                <h3 id="bio">Full-stack web developer with a history in language and education, specializing in the MERN Stack.<br/>Looking to join a cooperative, motivated, and driven team.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.</h3>
             </div>
         </AboutWrapper>
     )
