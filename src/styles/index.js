@@ -6,7 +6,8 @@ const font = "Meera Inimai"
 
 export const Button = styled.button`
     :hover {
-        color: ${click}
+        color: ${click};
+        cursor: pointer
     };
 
     :active {
@@ -359,9 +360,11 @@ export const FooterWrapper = styled.div`
     a {
 
         margin: 15px;
-        cursor: url("cat.cur"), default;
+        color: black;
+
         :hover {
-            color: yellowgreen
+            color: yellowgreen;
+            cursor: pointer
         }
 
         :visited {
