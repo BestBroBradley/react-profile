@@ -24,7 +24,7 @@
         "alt": "weather app",
         "description": "Allows user to search a 3rd-party weather API for data and also retreive their previous search results.",
         "href": "https://bestbrobradley.github.io/weather-buddy/",
-        "repo": "https://github.com/BestBroBradley/weather-buddy"
+        "repo": "https://bbb-weather-buddy.herokuapp.com/"
     },
     {
         "id": 4,
