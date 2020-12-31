@@ -49,7 +49,7 @@
         "name": "Rock, Paper, Scissors - GO!",
         "img": "rps-go",
         "alt": "user has lost",
-        "description": "An app for researching and tracking prices of local restaurants.",
+        "description": "A simple front-end Rock, Paper, Scissors game played against the computer.",
         "href": "https://bestbrobradley.github.io/rock-paper-scissors-go/",
         "repo": "https://github.com/BestBroBradley/rock-paper-scissors-go"
     }
