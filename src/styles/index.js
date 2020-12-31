@@ -370,9 +370,28 @@ export const FooterWrapper = styled.div`
         :visited {
             color: black
         }
-    }
 
-    #footer {
 
     }
+
+    button {
+        margin: 15px;
+        border: none;
+        background: white;
+
+        :hover {
+            color: yellowgreen;
+            cursor: pointer
+        }
+
+        :visited {
+            border: none;
+        }
+    }
+
+    img {
+        width: auto;
+        height: 60px;
+    }
+
 `
