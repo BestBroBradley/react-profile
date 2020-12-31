@@ -15,7 +15,7 @@
         "alt": "my shelf",
         "description": "An app using the Google Books API and user authentication to track a user's virtual bookshelf.",
         "href": "https://bbb-my-shelf.herokuapp.com",
-        "repo": "hhttps://github.com/BestBroBradley/my-shelf"
+        "repo": "https://github.com/BestBroBradley/my-shelf"
     },
     {
         "id": 3,
