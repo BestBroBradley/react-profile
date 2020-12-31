@@ -10,12 +10,12 @@
     },
     {
         "id": 2,
-        "name": "Budget Buddy",
-        "img": "budget-buddy",
-        "alt": "submit an initial budget",
-        "description": "An app for researching and tracking prices of local restaurants.",
-        "href": "https://kyleawkjell.github.io/Project-1/index.html",
-        "repo": "https://github.com/kyleawkjell/Project-1"
+        "name": "My Shelf",
+        "img": "my-shelf",
+        "alt": "my shelf",
+        "description": "An app using the Google Books API and user authentication to track a user's virtual bookshelf.",
+        "href": "https://bbb-my-shelf.herokuapp.com",
+        "repo": "hhttps://github.com/BestBroBradley/my-shelf"
     },
     {
         "id": 3,
