@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { languageContext } from './languageContext'
 import "./styles/fonts.css"
 import { Contact } from './components/pages/Contact'
 import { About } from './components/pages/About'
@@ -7,6 +8,16 @@ import { Portfolio } from './components/pages/Portfolio'
 import { Footer } from './components/Footer'
 
 function App() {
+
+  const [state, setState] = useState({
+    language: ""
+  })
+
+  useEffect(() => {
+    setState({...state, language: "English"})
+    console.log("State changed")
+  }, [])
+
   return (
   <Router>
    <Route exact path="/" component={About} />
