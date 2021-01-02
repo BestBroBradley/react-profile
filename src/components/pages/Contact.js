@@ -11,6 +11,9 @@ export const Contact = () => {
     console.log("contact")
     console.log(language)
 
+    const subheaderEng = "Feel free to reach out with any inquiries using the form below, or directly at allison.bradley@outlook.com."
+    const subheaderJapan = "私に聞きたい質問があるや連絡したいばい、下にあるフォームを自由に使って下さい。"
+
     return (
         <>
             <Navbar
@@ -25,26 +28,26 @@ export const Contact = () => {
                 <div className="container">
                     <div id="contact-details">
                         <h1>Contact Me</h1>
-                            <p>Feel free to reach out with any inquiries using the form below, or directly at allison.bradley@outlook.com.</p>
+                        <p>{language === "USA" ? subheaderEng : subheaderJapan}</p>
                         <div id="email-form">
                             <form action="https://formspree.io/xeqkggzj" method="POST">
-                            <div className="form-field">
-                                <label htmlFor="name">Name:</label>
-                                <input type="text" name="name" />
-                            </div>
-                            <div className="form-field">
-                                <label htmlFor="phone">Phone (optional):</label>
-                                <input type="text" name="phone" />
-                            </div>
-                            <div className="form-field">
-                                <label htmlFor="email">Email:</label>
-                                <input type="text" name="email" />
-                            </div>
-                            <div className="form-field">
-                                <label htmlFor="message">Message:</label>
-                                <textarea rows="7" type="message" name="email" />
-                            </div>
-                            <Button id="submit-btn" type="submit">Submit</Button>
+                                <div className="form-field">
+                                    <label htmlFor="name">{language === "USA" ? "Name" : "ネーム"}:</label>
+                                    <input type="text" name="name" />
+                                </div>
+                                <div className="form-field">
+                                    <label htmlFor="phone">{language === "USA" ? "Phone (optional)" : "電話番号（入れなくてもいいです。）"}:</label>
+                                    <input type="text" name="phone" />
+                                </div>
+                                <div className="form-field">
+                                    <label htmlFor="email">{language === "USA" ? "Email" : "メール"}:</label>
+                                    <input type="text" name="email" />
+                                </div>
+                                <div className="form-field">
+                                    <label htmlFor="message">{language === "USA" ? "Message" : "メッセージ"}:</label>
+                                    <textarea rows="7" type="message" name="email" />
+                                </div>
+                                <Button id="submit-btn" type="submit">{language === "USA" ? "Submit" : "提出"}</Button>
                             </form>
                         </div>
                     </div>
