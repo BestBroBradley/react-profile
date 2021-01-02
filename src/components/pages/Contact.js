@@ -1,16 +1,24 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Navbar } from '../Navbar'
 import { ContactWrapper, Button } from "../../styles"
+import { languageContext } from "../../languageContext"
 
 export const Contact = () => {
+
+    const { state } = useContext(languageContext)
+
+    const { language } = state
+    console.log("contact")
+    console.log(language)
+
     return (
         <>
             <Navbar
-                title="Contact"
+                title={language === "USA" ? "Contact" : "お問い合わせ"}
                 secondaryLink="/"
-                secondaryBtn="Home"
+                secondaryBtn={language === "USA" ? "Home" : "ホーム"}
                 primaryLink="/portfolio"
-                primaryBtn="Portfolio"
+                primaryBtn={language === "USA" ? "Contact" : "プロジェクト"}
                 alt="telephone"
             />
             <ContactWrapper>
