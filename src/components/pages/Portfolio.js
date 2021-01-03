@@ -1,24 +1,35 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Navbar } from '../Navbar'
 import { PortfolioWrapper } from "../../styles"
 import { Card } from "../subcomponents/Card"
 import portfolio from "../../data/portfolio.json"
+import { languageContext } from "../../languageContext.js"
 
 export const Portfolio = () => {
+
+    const { state } = useContext(languageContext)
+
+    const { language } = state
+    console.log("contact")
+    console.log(language)
+
+    const subheaderEng = "Click on the photos below to be redirected."
+    const subheaderJapan = "格プロジェクトを見るために、下にあるイメージをクリックして下さい。"
+
     return (
         <>
             <Navbar
-                title="Portfolio"
+                title={language === "USA" ? "Portfolio" : "プロジェクト"}
                 secondaryLink="/"
-                secondaryBtn="Home"
+                secondaryBtn={language === "USA" ? "Home" : "ホーム"}
                 primaryLink="/contact"
-                primaryBtn="Contact"
+                primaryBtn={language === "USA" ? "Contact" : "お問い合わせ"}
                 alt="computer and eyeglasses"
             />
             <PortfolioWrapper>
                 <div id="outer-div">
                     <h1>My Work</h1>
-                    <p>Click on the photos below to be redirected.</p>
+                    <p>{language === "USA" ? subheaderEng : subheaderJapan}</p>
                     <div className="container">
                         {portfolio.map((project) =>
                             <Card

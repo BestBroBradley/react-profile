@@ -14,7 +14,7 @@ function App() {
   })
 
   useEffect(() => {
-    setState({ ...state, language: "English" })
+    setState({ ...state, language: "USA" })
     console.log("State changed")
   }, [])
 

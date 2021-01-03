@@ -29,7 +29,7 @@ export const About = () => {
     <Link to="/contact" id="contact-btn"><Button>{language === "USA" ? "Contact" : "お問い合わせ"}</Button></Link>
                     </div>
                     <div className="link">
-                        <Link to="/portfolio" id="port-btn"><Button>{language === "USA" ? "Contact" : "プロジェクト"}</Button></Link>
+                        <Link to="/portfolio" id="port-btn"><Button>{language === "USA" ? "Portfolio" : "プロジェクト"}</Button></Link>
                     </div>
                 </div>
                 <img alt="The author" src={Me} />

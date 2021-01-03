@@ -21,7 +21,7 @@ export const Contact = () => {
                 secondaryLink="/"
                 secondaryBtn={language === "USA" ? "Home" : "ホーム"}
                 primaryLink="/portfolio"
-                primaryBtn={language === "USA" ? "Contact" : "プロジェクト"}
+                primaryBtn={language === "USA" ? "Portfolio" : "プロジェクト"}
                 alt="telephone"
             />
             <ContactWrapper>
