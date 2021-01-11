@@ -13,8 +13,8 @@ export const Portfolio = () => {
     console.log("contact")
     console.log(language)
 
-    const subheaderEng = "Click on the photos below to be redirected."
-    const subheaderJapan = "格プロジェクトを見るために、下にあるイメージをクリックして下さい。"
+    const subheaderEng = "Check out some of my recent projects below."
+    const subheaderJapan = "最近できたのプロジェクトは下にご覧ください。"
 
     return (
         <>

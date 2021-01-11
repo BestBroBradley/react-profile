@@ -14,9 +14,9 @@ export const About = () => {
     console.log("contact")
     console.log(language)
 
-    const bioEng = `Full-stack web developer with a history in language and education, specializing in the MERN Stack.  Looking to join a cooperative, motivated, and driven team.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.`
+    const bioEng = `Full-stack web developer with a history in language and education, specializing in Mongo and React.  Looking to join a collaborative, motivated, and creative team.  Fan of Star Trek and cats.  Ready to talk knitting any day of the week.`
 
-    const bioJapan = `TBA`
+    const bioJapan = `私は言語と教育の学歴でモンゴとリアクトを専門してるのフルスタックのデベロッパーです。協同なやる気があるのクリエチブなチームに参加したいんです。スタートレックと猫の大ファンで、編み物についていつでも話し合ったら嬉しです。`
 
     return (
         <AboutWrapper>
