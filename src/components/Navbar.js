@@ -11,16 +11,16 @@ export const Navbar = (props) => {
 			<div id="profile-image">
 				<div>
 				</div>
-	<h1 className="link" id="location">{props.title}</h1>
+				<h1 className="link" id="location">{props.title}</h1>
 				<div id="profile-span">
 					<div className="link">
-	<Link to={props.primaryLink} id="first-btn"><Button>{props.primaryBtn}</Button></Link>
+						<Link to={props.primaryLink} id="first-btn"><Button>{props.primaryBtn}</Button></Link>
 					</div>
 					<div className="link">
-	<Link to={props.secondaryLink} id="second-btn"><Button>{props.secondaryBtn}</Button></Link>
+						<Link to={props.secondaryLink} id="second-btn"><Button>{props.secondaryBtn}</Button></Link>
 					</div>
 				</div>
-				<img alt={props.alt} src={(props.title === "Contact") ? Contact : Portfolio} />
+				<img alt={props.alt} src={(props.title === "Contact" || props.title === "お問い合わせ") ? Contact : Portfolio} />
 			</div>
 		</HeaderWrapper>
 	)
